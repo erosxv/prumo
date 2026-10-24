@@ -1,0 +1,11 @@
+.claude/
+node_modules/
+desktop/bin/
+desktop/dist/
+desktop/resources/index.html
+desktop/resources/js/neutralino.js
+desktop/resources/js/neutralino.d.ts
+desktop/.tmp/
+desktop/.storage/
+desktop/neutralinojs.log
+desktop/resources/icons/

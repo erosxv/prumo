@@ -1,0 +1,64 @@
+{
+  "$schema": "https://raw.githubusercontent.com/neutralinojs/neutralinojs/main/schemas/neutralino.config.schema.json",
+  "applicationId": "io.github.erosxv.prumo",
+  "applicationName": "Prumo",
+  "applicationIcon": "resources/icons/app.ico",
+  "author": "erosxv",
+  "description": "Prumo: tarefas, foco, hÃ¡bitos e notas",
+  "version": "1.1.0",
+  "defaultMode": "window",
+  "port": 47321,
+  "documentRoot": "/resources/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "tokenSecurity": "one-time",
+  "dataLocation": "system",
+  "storageLocation": "system",
+  "logging": {
+    "enabled": false,
+    "writeToLogFile": false
+  },
+  "nativeAllowList": [
+    "app.exit",
+    "app.restartProcess",
+    "window.show",
+    "window.hide",
+    "window.focus",
+    "window.unminimize",
+    "window.isVisible",
+    "os.setTray",
+    "os.showNotification",
+    "os.showSaveDialog",
+    "os.showOpenDialog",
+    "os.execCommand",
+    "filesystem.readFile",
+    "filesystem.writeFile",
+    "filesystem.writeBinaryFile",
+    "updater.*"
+  ],
+  "modes": {
+    "window": {
+      "title": "Prumo",
+      "width": 1200,
+      "height": 820,
+      "minWidth": 380,
+      "minHeight": 480,
+      "center": true,
+      "icon": "/resources/icons/app.png",
+      "enableInspector": false,
+      "webviewArgs": "--disable-gpu --renderer-process-limit=1",
+      "useSavedState": true,
+      "resizable": true,
+      "exitProcessOnClose": false
+    }
+  },
+  "cli": {
+    "binaryName": "Prumo",
+    "resourcesPath": "/resources/",
+    "extensionsPath": "/extensions/",
+    "clientLibrary": "/resources/js/neutralino.js",
+    "binaryVersion": "6.10.0",
+    "clientVersion": "6.10.0"
+  }
+}

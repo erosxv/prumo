@@ -1,0 +1,11 @@
+{
+  "name": "prumo",
+  "private": true,
+  "description": "Ferramentas para gerar o app de bandeja do Prumo (Windows).",
+  "scripts": {
+    "release": "node tools/release.mjs"
+  },
+  "devDependencies": {
+    "@neutralinojs/neu": "^11.8.0"
+  }
+}
